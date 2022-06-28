@@ -1,5 +1,8 @@
 package com.example.minitestquizz.Service;
 
+import org.springframework.data.domain.Page;
+
+import java.awt.print.Pageable;
 import java.util.Optional;
 
 public interface IGeneralService<T> {
@@ -10,4 +13,7 @@ public interface IGeneralService<T> {
     void save(T t);
 
     void remove(Long id);
+
+    Page<T> findAllByNameContaining(Pageable pageable, String name);
+
 }
