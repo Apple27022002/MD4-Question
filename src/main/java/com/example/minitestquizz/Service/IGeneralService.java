@@ -1,7 +1,5 @@
 package com.example.minitestquizz.Service;
 
-import com.example.minitestquizz.Model.Answer;
-
 import java.util.Optional;
 
 public interface IGeneralService<T> {
